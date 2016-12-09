@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AngularPublishExample
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
@@ -30,7 +29,7 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
+
 # angular-publish-example
 An example how to publish angular 2 component to npm.
->>>>>>> 49f6f56aee13909adfe3c7bd010a82fdb9c7b34d
+
