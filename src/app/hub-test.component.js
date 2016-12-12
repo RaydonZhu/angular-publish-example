@@ -17,8 +17,8 @@ var HubTestComponent = (function () {
     HubTestComponent = __decorate([
         core_1.Component({
             selector: 'hub-test',
-            styles: ["\n       h1 {\n            color: #ffc65c;\n        }\n    "],
-            template: "<div>\n                  <h1 (click)=\"onClick()\">{{message}}</h1>\n               </div>"
+            templateUrl: './hub-test.component.html',
+            styleUrls: ['./hub-test.component.css']
         })
     ], HubTestComponent);
     return HubTestComponent;

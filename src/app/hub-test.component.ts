@@ -2,14 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'hub-test',
-    styles: [`
-       h1 {
-            color: #ffc65c;
-        }
-    `],
-    template: `<div>
-                  <h1 (click)="onClick()">{{message}}</h1>
-               </div>`
+  templateUrl: './hub-test.component.html',
+  styleUrls: ['./hub-test.component.css']
 })
 export class HubTestComponent {
 
