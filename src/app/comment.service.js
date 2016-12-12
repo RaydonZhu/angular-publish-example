@@ -6,22 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-var hub_test_component_1 = require('./hub-test.component');
-var HubModule = (function () {
-    function HubModule() {
+var CommentService = (function () {
+    function CommentService(mockDatabase) {
+        this.mockDatabase = mockDatabase;
     }
-    HubModule = __decorate([
-        core_1.NgModule({
-            declarations: [
-                hub_test_component_1.HubTestComponent
-            ],
-            imports: [],
-            providers: [],
-            exports: [
-                hub_test_component_1.HubTestComponent
-            ]
-        })
-    ], HubModule);
-    return HubModule;
+    CommentService.prototype.getUser = function () {
+        return this.mockDatabase.user;
+    };
+    CommentService.prototype.getComment = function (commentId) {
+        return this.mockDatabase.comments.find(function (po) { return po.commendId === commentId; });
+    };
+    CommentService = __decorate([
+        core_1.Injectable()
+    ], CommentService);
+    return CommentService;
 }());
-exports.HubModule = HubModule;
+exports.CommentService = CommentService;

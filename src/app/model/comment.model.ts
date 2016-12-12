@@ -1,4 +1,4 @@
-export class HubComment {
+export class Comment {
 	public commendId: number;
 	public author: string;
 	public authorImage: string;

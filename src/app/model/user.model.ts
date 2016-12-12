@@ -1,4 +1,4 @@
-export class HubUser {
+export class User {
 	name: string;
 	gender: string;
 	
